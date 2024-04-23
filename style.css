@@ -7,8 +7,8 @@ body {
 
 .container {
     width: 80%;
-    margin: 20px auto;
-    padding: 20px;
+    margin: 100px auto 0;
+    padding: 40px 35px;
     text-align: center;
     background: linear-gradient(135deg, #00fbea, #5b548a);
     border-radius: 20px;
@@ -73,7 +73,7 @@ body {
 
 .movie-grid {
     display: grid;
-    grid-template-columns: repeat(autofit, minmax(2, 1fr));
+    grid-template-columns: repeat(2, 1fr));
     gap: 20px;
 }
 
@@ -100,4 +100,32 @@ body {
 .footer {
     margin-top: 20px;
     font-size: 25px;
+}
+/* Example media query for smaller screens */
+@media (max-width: 768px) {
+    /* Add CSS rules for smaller screens here */
+    .container {
+        width: 90%; /* Adjust container width for smaller screens */
+    }
+
+    .searchBox {
+        font-size: 16px; /* Decrease font size of search box input */
+    }
+
+    .searchBtn {
+        width: 50px; /* Decrease width of search button */
+        height: 50px; /* Decrease height of search button */
+    }
+
+    .movie-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust column width for movie grid */
+    }
+
+    .movie-details {
+        padding: 10px; /* Decrease padding for movie details */
+    }
+
+    .footer {
+        margin-top: 10px; /* Decrease margin-top for footer */
+    }
 }
