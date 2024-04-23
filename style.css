@@ -7,8 +7,8 @@ body {
 
 .container {
     width: 80%;
-    margin: 100px auto 0;
-    padding: 40px 35px;
+    margin: 20px auto;
+    padding: 20px;
     text-align: center;
     background: linear-gradient(135deg, #00fbea, #5b548a);
     border-radius: 20px;
@@ -73,7 +73,7 @@ body {
 
 .movie-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(autofit, minmax(2, 1fr));
     gap: 20px;
 }
 
