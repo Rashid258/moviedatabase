@@ -1,4 +1,4 @@
-body {
+6wbody {
     background: #222;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -101,31 +101,29 @@ body {
     margin-top: 20px;
     font-size: 25px;
 }
-/* Example media query for smaller screens */
 @media (max-width: 768px) {
-    /* Add CSS rules for smaller screens here */
     .container {
-        width: 90%; /* Adjust container width for smaller screens */
+        width: 90%;
     }
 
     .searchBox {
-        font-size: 16px; /* Decrease font size of search box input */
+        font-size: 16px;
     }
 
     .searchBtn {
-        width: 50px; /* Decrease width of search button */
-        height: 50px; /* Decrease height of search button */
+        width: 50px; 
+        height: 50px; 
     }
 
     .movie-grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust column width for movie grid */
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 
     .movie-details {
-        padding: 10px; /* Decrease padding for movie details */
+        padding: 10px; 
     }
 
     .footer {
-        margin-top: 10px; /* Decrease margin-top for footer */
+        margin-top: 10px;
     }
 }
